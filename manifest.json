@@ -1,0 +1,20 @@
+{
+  "name": "RDIO Extension",
+  "version": "1.0",
+  "description": "A screen saver extension for RDIO that displays Artist Name, Song and Album by Rylan Bowers (@rylanb).",
+  "page_action": {
+    "default_icon": "icon.png",
+    "popup" : "popup.html"
+  },
+  "content_scripts":[
+    {
+      "matches" : ["http://www.rdio.com/*"],
+      "css" : ["rdio_plugin.css"],
+      "js" : ["jquery.js", "rdio_ext.js"]
+    }    
+  ],
+  "permissions": [
+    "http://rdio.com/*",
+    "http://*.rdio.com/*"],
+    "rdio_access": ["popup.html"]
+}

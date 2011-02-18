@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+  margin: 0;
+  padding: 0;
+}
+#full_screen_back{
+	background-color: #181C1E;
+	display: none;
+	height: 100%;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+#notification{
+  background-color: #181C1E; 
+  border: 2px dotted #666;
+  color: #FFF;
+  left: 45%;
+  padding: 10px; 
+  position: absolute;
+  top:20px;
+  z-index: 9999;
+}
+.song_info_row div{
+  color: #FFF;
+	display: inline-block;
+	font-family: Arial;
+  height: 1.2em;
+	line-height: 1.2em;
+	margin: 30px 0;
+  overflow: hidden;
+	position: relative;
+	width: auto;
+}
+#track_album{	
+  text-shadow: #999 1px 0px 34px;
+}
+
+#track_name{
+  font-weight: bold;
+  text-shadow: #181C1E 1px 0px 14px;
+}
+
+#track_artist{
+  text-shadow: #666 1px 0px 24px;
+}
+
+@-webkit-keyframes move-diag{
+	0% {
+		left: -20%;
+		top: 0px;
+	}
+	50% {
+		left: 65%;
+		top: 100px;
+	}
+	100% {
+		left: 100%;
+		top: 200px;
+	}
+}
+
+@-webkit-keyframes move-horiz {
+	0% {left: -10%;}
+	50% {left: 50%;}
+	100% {left: 100%;}
+}
+
+@-webkit-keyframes move-vert {
+  from {top: -400px;} to { top: 800px; }
+}
+
+.vert_active2{
+	-webkit-animation-name: move-diag;
+	-webkit-animation-duration: 210s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: normal;
+	font-size: 180px;
+	opacity: .8;
+	padding: 20px 0;
+}
+
+.horiz_active{
+	-webkit-animation-name: move-horiz;
+	-webkit-animation-duration: 180s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: normal;
+	font-size: 150px;
+	opacity: .9;
+	padding: 30px 0 10px 0;
+}
+
+.vert_active{
+	-webkit-animation-name: move-vert;
+	-webkit-animation-duration: 270s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: normal;
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	font-size: 130px;
+	padding: 10px 0;
+}
