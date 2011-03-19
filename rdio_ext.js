@@ -10,6 +10,7 @@
   		else{
   		  $(document.body).append('<div id="full_screen_back"><div class="song_info_row"><div id="track_album"></div></div>' + 
   		  '<div class="song_info_row"><div id="track_artist"></div></div><div class="song_info_row"> <div id="track_name"></div></div></div>');
+  		  $('#inner_container').css('position', 'relative').css('z-index', '9999');
   		}
   		
   		//Listen for resize to change height of overshadow.
@@ -98,7 +99,8 @@
   			});
 		  },
   		animAddClass: function (obj){
-  			var classes = ['vert_active2', 'vert_active', 'horiz_active'];
+  		  obj.attr('class', '');
+  			var classes = ['vert_active3', 'vert_active2', 'vert_active', 'horiz_active', 'horiz_active2'];
   			var x = Math.floor(Math.random() * (classes.length));
         obj.addClass(classes[x]);
         //obj.css("left", Math.floor(Math.random() * $('body').width)).css("top", Math.floor(Math.random() * $('body').height));

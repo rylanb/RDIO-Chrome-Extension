@@ -69,37 +69,74 @@ body{
 	100% {left: 100%;}
 }
 
+@-webkit-keyframes move-horiz2 {
+	0% {left: -10%;}
+	50% {left: 50%;}
+	100% {left: 100%;}
+}
+
 @-webkit-keyframes move-vert {
   from {top: -400px;} to { top: 800px; }
 }
 
+@-webkit-keyframes move-vertSecond {
+  from {top: -400px;} to { top: 800px; }
+}
+
 .vert_active2{
-	-webkit-animation-name: move-diag;
-	-webkit-animation-duration: 210s;
+	-webkit-animation-name: move-vertSecond;
+	-webkit-animation-duration: 120s;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-direction: normal;
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
 	font-size: 180px;
 	opacity: .8;
 	padding: 20px 0;
+	right: 10%;
 }
 
-.horiz_active{
-	-webkit-animation-name: move-horiz;
-	-webkit-animation-duration: 180s;
+.vert_active3{
+	-webkit-animation-name: move-vertSecond;
+	-webkit-animation-duration: 120s;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-direction: normal;
-	font-size: 150px;
-	opacity: .9;
-	padding: 30px 0 10px 0;
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	font-size: 180px;
+	opacity: .8;
+	padding: 20px 0;
+	left: 20%;
 }
 
 .vert_active{
 	-webkit-animation-name: move-vert;
-	-webkit-animation-duration: 270s;
+	-webkit-animation-duration: 200s;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-direction: normal;
 	-moz-transform: rotate(90deg);
 	-webkit-transform: rotate(90deg);
 	font-size: 130px;
 	padding: 10px 0;
+	right: 30%;
+}
+
+.horiz_active2{
+	-webkit-animation-name: move-horiz;
+	-webkit-animation-duration: 180s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: normal;
+	font-size: 140px;
+	opacity: .9;
+	padding: 30px 0 10px 0;
+}
+
+.horiz_active{
+	-webkit-animation-name: move-horiz2;
+	-webkit-animation-duration: 160s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: normal;
+	font-size: 150px;
+	opacity: .9;
+	padding: 30px 0 10px 0;
 }
