@@ -5,74 +5,102 @@ body{
   padding: 0;
 }
 #full_screen_back{
-	background-color: #181C1E;
-	display: none;
-	height: 100%;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	top: 0px;
-	width: 100%;
+  background-color: #181C1E;
+  display: none;
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 800;
 }
-#notification{
-  background-color: #181C1E; 
+
+#lg_img {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 600px;
+  opacity: .15;
+  padding: 50px 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.notification{
+  background-color: #181C1E;
   border: 2px dotted #666;
   color: #FFF;
   left: 45%;
-  padding: 10px; 
+  padding: 15px;
   position: absolute;
-  top:20px;
-  z-index: 9999;
+  text-transform: uppercase;
+  top: 20px;
+  z-index: 999;
 }
 .song_info_row div{
   color: #FFF;
-	display: inline-block;
-	font-family: Arial;
+  display: inline-block;
+  font-family: Arial;
   height: 1.2em;
-	line-height: 1.2em;
-	margin: 30px 0;
+  line-height: 1.2em;
+  margin: 30px 0;
   overflow: hidden;
-	position: relative;
-	width: auto;
+  position: relative;
+  width: auto;
 }
-#track_album{	
+#track_album{
+  font-style: italic;
   text-shadow: #999 1px 0px 34px;
 }
 
 #track_name{
   font-weight: bold;
   text-shadow: #181C1E 1px 0px 14px;
+  text-transform: uppercase;
 }
 
 #track_artist{
+  color: #fe4d4d;
+  font-weight: bold;
   text-shadow: #666 1px 0px 24px;
+  text-transform: uppercase;
+  -webkit-animation-name: move-horiz;
+  -webkit-animation-duration: 180s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  font-size: 140px;
+  opacity: .9;
+  padding: 30px 0 10px 0;
 }
 
 @-webkit-keyframes move-diag{
-	0% {
-		left: -20%;
-		top: 0px;
-	}
-	50% {
-		left: 65%;
-		top: 100px;
-	}
-	100% {
-		left: 100%;
-		top: 200px;
-	}
+  0% {
+    left: -20%;
+    top: 0px;
+  }
+  50% {
+    left: 65%;
+    top: 100px;
+  }
+  100% {
+    left: 100%;
+    top: 200px;
+  }
 }
 
 @-webkit-keyframes move-horiz {
-	0% {left: -10%;}
-	50% {left: 50%;}
-	100% {left: 100%;}
+  0% {left: -10%;}
+  50% {left: 50%;}
+  100% {left: 100%;}
 }
 
 @-webkit-keyframes move-horiz2 {
-	0% {left: -10%;}
-	50% {left: 50%;}
-	100% {left: 100%;}
+  0% {left: -10%;}
+  50% {left: 50%;}
+  100% {left: 100%;}
 }
 
 @-webkit-keyframes move-vert {
@@ -84,59 +112,64 @@ body{
 }
 
 .vert_active2{
-	-webkit-animation-name: move-vertSecond;
-	-webkit-animation-duration: 120s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-direction: normal;
-	-moz-transform: rotate(90deg);
-	-webkit-transform: rotate(90deg);
-	font-size: 180px;
-	opacity: .8;
-	padding: 20px 0;
-	right: 10%;
+  -webkit-animation-name: move-vertSecond;
+  -webkit-animation-duration: 120s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  font-size: 180px;
+  opacity: .8;
+  padding: 20px 0;
+  right: 0%;
 }
 
 .vert_active3{
-	-webkit-animation-name: move-vertSecond;
-	-webkit-animation-duration: 120s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-direction: normal;
-	-moz-transform: rotate(90deg);
-	-webkit-transform: rotate(90deg);
-	font-size: 180px;
-	opacity: .8;
-	padding: 20px 0;
-	left: 20%;
+  -webkit-animation-name: move-vertSecond;
+  -webkit-animation-duration: 120s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  font-size: 180px;
+  opacity: .8;
+  padding: 20px 0;
+  left: 20%;
 }
 
 .vert_active{
-	-webkit-animation-name: move-vert;
-	-webkit-animation-duration: 200s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-direction: normal;
-	-moz-transform: rotate(90deg);
-	-webkit-transform: rotate(90deg);
-	font-size: 130px;
-	padding: 10px 0;
-	right: 30%;
+  -webkit-animation-name: move-vert;
+  -webkit-animation-duration: 200s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  font-size: 130px;
+  padding: 10px 0;
+  right: 20%;
 }
 
 .horiz_active2{
-	-webkit-animation-name: move-horiz;
-	-webkit-animation-duration: 180s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-direction: normal;
-	font-size: 140px;
-	opacity: .9;
-	padding: 30px 0 10px 0;
+  -webkit-animation-name: move-horiz;
+  -webkit-animation-duration: 180s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  font-size: 140px;
+  opacity: .9;
+  padding: 30px 0 10px 0;
 }
 
 .horiz_active{
-	-webkit-animation-name: move-horiz2;
-	-webkit-animation-duration: 160s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-direction: normal;
-	font-size: 150px;
-	opacity: .9;
-	padding: 30px 0 10px 0;
+  -webkit-animation-name: move-horiz2;
+  -webkit-animation-duration: 160s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  font-size: 150px;
+  opacity: .9;
+  padding: 30px 0 10px 0;
+}
+
+#player_container {
+  position: relative;
+  z-index: 999;
 }
