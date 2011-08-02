@@ -64,11 +64,13 @@ div#track_name {
 }
 
 div#track_artist {
+  bottom: 60px;
   color: #fe4d4d !important;
   display: block;
   font-weight: bold;
   height: auto;
   line-height: .85em;
+  position: absolute;
   text-shadow: #999 2px 3px 15px;
   text-transform: uppercase;
   -webkit-animation-name: move-horiz;
