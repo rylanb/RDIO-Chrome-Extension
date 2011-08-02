@@ -1,5 +1,5 @@
 ========================================================
-You'll have to DL the RDIO.crx.zip file if you want to install into Chrome and test it out. Unzip an the drag it into a new Chrome tab and it'll ask for your permission to install. Now whenever you visit RDIO.com and play music in your account you can have a custom screensaver for your playlist. Shift-8 to activate.
+You'll have to CLONE this repo and then package the folder in Tools -> Extensions -> Developer Mode. I don't know how to get the right CRX file to you yet. When saved out of the browser the MIME-TYPE seems set wrong. Once packaged drag it into a new Chrome tab and it'll ask for your permission to install. Now whenever you visit RDIO.com and play music in your account you can have a custom screensaver for your playlist. Shift-8 to activate.
 
 I created this because @ Quickleft (http://quickleft.com), we listen to RDIO all day long and people will occassionally ask me what's playing.  Its been asked much less often since this has gone into effect.
 
