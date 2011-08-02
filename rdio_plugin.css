@@ -46,7 +46,7 @@ div#track_album, div#track_name, div#track_artist {
   font-family: Arial;
   height: 1.2em;
   line-height: 1.2em;
-  margin: 30px 0;
+  margin: 10px 0;
   overflow: hidden;
   position: relative;
   width: auto;
@@ -54,19 +54,22 @@ div#track_album, div#track_name, div#track_artist {
 }
 div#track_album {
   font-style: italic;
-  text-shadow: #999 1px 0px 34px;
+  text-shadow: #999 1px 1px 34px;
 }
 
 div#track_name {
   font-weight: bold;
-  text-shadow: #181C1E 1px 0px 14px;
+  text-shadow: #181C1E 1px 1px 14px;
   text-transform: uppercase;
 }
 
 div#track_artist {
   color: #fe4d4d !important;
+  display: block;
   font-weight: bold;
-  text-shadow: #666 1px 0px 24px;
+  height: auto;
+  line-height: .85em;
+  text-shadow: #999 2px 3px 15px;
   text-transform: uppercase;
   -webkit-animation-name: move-horiz;
   -webkit-animation-duration: 180s;
@@ -74,7 +77,7 @@ div#track_artist {
   -webkit-animation-direction: normal;
   font-size: 140px;
   opacity: .9;
-  padding: 30px 0 10px 0;
+  padding: 0 0 10px 0;
 }
 
 @-webkit-keyframes move-diag {
