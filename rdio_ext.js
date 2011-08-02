@@ -8,9 +8,8 @@
         $('#full_screen_back').slideUp("fast");
       }
       else{
-        $(document.body).append('<div id="full_screen_back"><div class="song_info_row"><div id="track_album"></div></div>' +
-        '<div class="song_info_row"><div id="track_artist"></div></div><div class="song_info_row"><div id="track_name">' +
-        '</div></div><div id="lg_img"></div></div>');
+        $(document.body).append('<div id="full_screen_back"><div id="lg_img"></div><div id="track_album"></div>' +
+        '<div id="track_artist"></div><div id="track_name"></div></div>');
         $('').css('position', 'relative').css('z-index', '9999');
       }
 
@@ -144,7 +143,7 @@
         RDIO.helpers.removeDivClasses();
       },
       removeDivClasses: function(){
-        $('.song_info_row div').each(function(){
+        $('#track_album, #track_name, #track_artist').each(function(){
           $(this).removeAttr("class");
         });
       }

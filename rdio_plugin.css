@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
-body{
+body {
   margin: 0;
   padding: 0;
 }
-#full_screen_back{
+#full_screen_back {
   background-color: #181C1E;
   display: none;
   height: 100%;
@@ -26,10 +26,10 @@ body{
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 800;
 }
 
-.notification{
+.notification {
   background-color: #181C1E;
   border: 2px dotted #666;
   color: #FFF;
@@ -40,7 +40,7 @@ body{
   top: 20px;
   z-index: 999;
 }
-.song_info_row div{
+div#track_album, div#track_name, div#track_artist {
   color: #FFF;
   display: inline-block;
   font-family: Arial;
@@ -50,20 +50,21 @@ body{
   overflow: hidden;
   position: relative;
   width: auto;
+  z-index: 999;
 }
-#track_album{
+div#track_album {
   font-style: italic;
   text-shadow: #999 1px 0px 34px;
 }
 
-#track_name{
+div#track_name {
   font-weight: bold;
   text-shadow: #181C1E 1px 0px 14px;
   text-transform: uppercase;
 }
 
-#track_artist{
-  color: #fe4d4d;
+div#track_artist {
+  color: #fe4d4d !important;
   font-weight: bold;
   text-shadow: #666 1px 0px 24px;
   text-transform: uppercase;
@@ -76,7 +77,7 @@ body{
   padding: 30px 0 10px 0;
 }
 
-@-webkit-keyframes move-diag{
+@-webkit-keyframes move-diag {
   0% {
     left: -20%;
     top: 0px;
@@ -111,7 +112,7 @@ body{
   from {top: -400px;} to { top: 800px; }
 }
 
-.vert_active2{
+.vert_active2 {
   -webkit-animation-name: move-vertSecond;
   -webkit-animation-duration: 120s;
   -webkit-animation-iteration-count: infinite;
@@ -124,7 +125,7 @@ body{
   right: 0%;
 }
 
-.vert_active3{
+.vert_active3 {
   -webkit-animation-name: move-vertSecond;
   -webkit-animation-duration: 120s;
   -webkit-animation-iteration-count: infinite;
@@ -137,7 +138,7 @@ body{
   left: 20%;
 }
 
-.vert_active{
+.vert_active {
   -webkit-animation-name: move-vert;
   -webkit-animation-duration: 200s;
   -webkit-animation-iteration-count: infinite;
@@ -149,7 +150,7 @@ body{
   right: 20%;
 }
 
-.horiz_active2{
+.horiz_active2 {
   -webkit-animation-name: move-horiz;
   -webkit-animation-duration: 180s;
   -webkit-animation-iteration-count: infinite;
@@ -159,7 +160,7 @@ body{
   padding: 30px 0 10px 0;
 }
 
-.horiz_active{
+.horiz_active {
   -webkit-animation-name: move-horiz2;
   -webkit-animation-duration: 160s;
   -webkit-animation-iteration-count: infinite;
