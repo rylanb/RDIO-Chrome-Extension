@@ -87,8 +87,12 @@
         $('#player_container').fadeOut('slow');
         $('#lg_img').css('opacity', '.15');
 
-        if($('body').css('overflow') !== 'hidden')
+        if( $('body').css('overflow') !== 'hidden' ) {
           $('body').css('overflow', 'hidden');
+        }
+        if( parseInt($('#p_column').css('z-index'), 10) < 999 ) {
+          $('#p_column').css('z-index', 'initial');
+        }
       },
       songTextSetup: function(){
         RDIO.helpers.removeDivClasses();
